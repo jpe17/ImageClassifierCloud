@@ -1,6 +1,6 @@
 from time import time
 start_time = time()
-print('Importing packages')
+print('Importing packages...')
 from tkinter import Tk, Frame, Label, Entry, Button, INSERT, Text, IntVar, END
 from tkinter.filedialog import askopenfile
 from google.cloud import pubsub_v1
@@ -14,8 +14,9 @@ def main():
     GUI_window = GUI()
     time_0 = time()
     file_path = GUI_window.box_1_fill.get()
+    GUI_window.close_window()
 
-    print(file_path)
+    print("Decoding and publishing image...")
 
     with open(file_path, "rb") as image_file:
         encoded_img = base64.b64encode(image_file.read())
@@ -53,12 +54,12 @@ def main():
             streaming_pull_future.cancel()
             streaming_pull_future.result()
 
-    print(f'Wrote excel output in {(time() - time_0):.1f} seconds')
+    print(f'Result received in {(time() - time_0):.1f} seconds')
 
 
 class GUI:
-    STANDARD_PADDING = 10
-    STANDARD_WIDTH = 50
+    STANDARD_PADDING = 20
+    STANDARD_WIDTH = 40
 
     def __init__(self):
         self.window = Tk()
@@ -89,7 +90,7 @@ class GUI:
 
         # Classify button
         frm_run = Frame(master=self.window)
-        frm_run.grid(row=self.row, column=1, padx=self.STANDARD_PADDING, pady=self.STANDARD_PADDING)
+        frm_run.grid(row=self.row, column=3, padx=self.STANDARD_PADDING, pady=self.STANDARD_PADDING)
         var = IntVar()
         self.btn_run = Button(master=frm_run, text='Classify', width=self.STANDARD_WIDTH - 25, borderwidth=2, command=lambda: var.set(1))
         self.btn_run.pack()
