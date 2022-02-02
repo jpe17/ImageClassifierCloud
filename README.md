@@ -13,6 +13,7 @@ The following schematic helps understanding this flow.
 
 ### Requied packages and their versions
 * pip install google-cloud-pubsub
+* pip install tk
 
 ### Usage
 
