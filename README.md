@@ -12,7 +12,7 @@ The following schematic helps understanding this flow.
 </p>
 
 ### Requied packages and their versions
-* google-cloud-pubsub
+* pip install google-cloud-pubsub
 
 ### Usage
 
