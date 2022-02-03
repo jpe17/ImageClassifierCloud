@@ -13,9 +13,17 @@ The following schematic helps understanding this flow.
 
 ### Requied packages and their versions
 * pip install google-cloud-pubsub
-* pip install tensorflow
 
 ### Usage
 
 ```
 usage: python client.py
+```
+
+### Folders *google-cloud-files* and *training-model*
+For those interested in using the same multi-class image classifier on different data, this library can also be used to train the model into any dataset, and to make predictions for new pictures, based on the new saved model. To do so follow these steps:
+
+1. Go to *training-model* and read the instructions to to train the model.
+2. Go on *google-cloud-files/* and upload a new image, to get a prediction for its class.
+
+Note that while this is a similar functionality to the overall *ImageClassifierCloud*, it will be executed locally and not be deployed as a service, and no message-broker will be involved.
