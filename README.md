@@ -20,6 +20,7 @@ The following schematic helps understanding this flow.
 usage: python client.py
 ```
 
+## Using a different dataset
 ### Folders *google-cloud-files* and *training-model*
 For those interested in using the same multi-class image classifier on different data, this library can also be used to train the model into any dataset, and to make predictions for new pictures, based on the new saved model. To do so follow these steps:
 
