@@ -3,15 +3,23 @@
 
 ### Steps to train this library on your own dataset
 
-1. Create a folder named *data* with the structure bellow.
+1. Create a folder named *data* with the structure bellow (the images name is irrelevant).
 ```
 data/
-...class_a/
-......a_image_1.jpg
-......a_image_2.jpg
-...class_b/
-......b_image_1.jpg
-......b_image_2.jpg
+...train/
+......class_a/
+.........image_1.jpg
+.........image_2.jpg
+......class_b/
+.........image_3.jpg
+.........image_4.jpg
+...test/
+......class_a/
+.........image_5.jpg
+.........image_6.jpg
+......class_b/
+.........image_7.jpg
+.........image_8.jpg
 ```
 
 2. Replace the folder *data* inside *training-model* by your own pictures.
