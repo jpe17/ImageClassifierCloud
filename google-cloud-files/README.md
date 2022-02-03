@@ -15,4 +15,4 @@ pip install numpy
 python predict.py
 ```
 
-5. Upload a picture that you want to predict.
+4. Upload a picture that you want to predict.
