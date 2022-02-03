@@ -1,4 +1,4 @@
-# Multi-class Image Classifier
+# How to Train Multi-class Image Classifier?
 ## Use the Convolutional Neural Network (CNN) to train an image classifier on your own dataset.
 
 ### Steps to train this library on your own dataset
