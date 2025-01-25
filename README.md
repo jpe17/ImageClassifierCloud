@@ -1,4 +1,4 @@
-# ImageClassifierCloud
+# ImageClassifierCloud: PubSub Image Inference
 ## Uploading any image from the Fashion MNIST test dataset and receiving the predicted label and corresponding accuracy, through a message broker.
 
 Convolutional neural network models are used extensively as the state-of-the-art technique for computer vision tasks like image classification, object detection, image recognition, etc... The Fashion MNIST dataset is popularly used for testing such models and its training data was used to train a multi-class image classifier that was constructed for this project. 
